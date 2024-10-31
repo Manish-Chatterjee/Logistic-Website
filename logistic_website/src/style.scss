@@ -1,0 +1,211 @@
+body{
+    background-color: antiquewhite;
+    margin: 0;
+    padding: 0;
+}
+
+.navlinks {
+    color: #f8f8f4;
+}
+
+.companyName {
+    font-size: 24px;
+    font-family: sans-serif;
+    font-weight: 400;
+    color: #f8f8f4;
+
+    margin: 0;
+}
+
+.companyTitle {
+    size: 18px;
+    color: #f8f8f4;
+
+    margin: 0;
+}
+
+.NavButton {
+    background-color: #f8f8f4;
+    position: absolute; /* Use absolute positioning */
+    right: 20px; /* Aligns the button to the right */
+    top: 50%; /* Start from the middle of the container */
+    transform: translateY(-50%); /* Adjust for the height of the button to center it vertically */
+}
+
+// .custom-offcanvas {
+//     background-color: #3e3d35; /* Change this to your desired background color */
+//     color: #f8f8f4; /* Optional: Change text color if needed */
+// }
+.custom-offcanvas-header {
+    background-color: #3e3d35;
+}
+
+.custom-offcanvas-body{
+    background-color: #3e3d35;
+}
+
+#header {
+    background-color: #3e3d35;
+    width: 100%;
+    height: 85px;
+    display: flex;
+    position: relative;
+
+    padding: 40px;
+
+    #company {
+        // border: 3px solid white;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        // padding-left: 50px;
+    }
+
+    #nav {
+        // border: 5px solid white;
+        width: 50%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+}
+
+#footer {
+    width: 100%;
+    height: auto; // Adjust height as needed
+    // height: 447px;
+    background-color: #3e3d35;
+    display: flex;
+    flex-direction: column;
+
+    margin: 0;
+    padding: 40px;
+
+    .sections-container {
+        display: flex;
+        flex: 1;
+        flex-wrap: wrap;
+
+        .section {
+            // border: 2px solid white;
+            flex: 1; // This will make all sections equal in width
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            flex-direction: column;
+
+            margin: 20px;
+            padding: 20px;
+
+            .subNavlinks {
+                color: #f8f8f4;
+            }
+        }
+    }
+
+    hr {
+        color: #f8f8f4;
+    }
+
+    #policy {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        color: white;
+        gap: 20px; // Adjust the value as needed for spacing
+    }
+}
+
+#aboutUs {
+    background-color: #3e3d35;
+    color: #f8f8f4;
+
+    display: flex;
+    gap: 100px;
+
+    padding: 20px 100px;
+
+    h3 {
+        color: #f8f8f4;
+        font-size: 40px;
+        font-weight: 600;
+    }
+}
+
+#leaderShip {
+    padding: 100px;
+
+    h2 {
+        color: #3e3d35;
+        font-weight: 600;
+        font-size: 40px;
+    }
+
+    button {
+        background-color: #3e3d35;
+        border: none;
+        height: 50px;
+    }
+
+    #profiles {
+        display: flex;
+        flex-wrap: wrap;
+
+        justify-content: space-around;
+
+        gap: 100px;
+        padding: 50px 0;
+
+        .individual {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .name {
+                font-size: 22px;
+                color: #3e3d35;
+                font-weight: 500;
+            }
+
+            .position {
+                font-size: 20px;
+                color: #3e3d35;
+                font-weight: 500;
+            }
+
+            .email {
+                font-size: 16px;
+                color: #3e3d35;
+            }
+
+            img {
+                border-radius: 20px;
+                margin-bottom: 10px;
+            }
+        }
+    }
+}
+
+#strategy {
+    background-color: #f8f8f4;
+    // display: flex;
+}
+
+#servicesContainer {
+    display: flex;
+    flex-wrap: wrap;
+
+    margin: 50px 0;
+    padding: 0 100px;
+    color: #3e3d35;
+
+
+    .services {
+        flex: 50%;
+        padding: 50px 50px 50px 0;
+    }
+}
