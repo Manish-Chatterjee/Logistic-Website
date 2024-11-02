@@ -8,7 +8,7 @@ const Strategy = () => {
     <div>
       <Header />
       <div style={{backgroundColor:"#f8f8f4", padding:"0 100px"}}>
-        <h1 style={{color:"#2c222b", margin:"0", fontSize:"70px", fontWeight:"600"}}>Services and Strategy</h1>
+        <h1 style={{color:"#2c222b", margin:"0", fontSize:"70px", fontWeight:"600", padding:"50px 0 20px 0px"}}>Services and<br />Strategy</h1>
         <div style={{display:"flex"}}>
           <div id='strategy'>
             <p>In temperature-controlled transportation, precision is key. Ensuring that materials are kept at the right temperature throughout their journey is critical for maintaining quality and compliance. We specialize in managing these intricate logistics, handling everything from inventory tracking to regulatory adherence. With our expertise, you can trust that your temperature-sensitive products are in good hands, allowing you to concentrate on your core business while we ensure smooth, reliable transport.</p>

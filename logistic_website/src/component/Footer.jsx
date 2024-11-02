@@ -2,6 +2,12 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const Footer = () => {
+
+    const handleScrollToTop = () => {
+        window.scrollTo(0, 0);
+      };
+    
+
   return (
     <div id='footer'>
         <div className='sections-container'>
@@ -11,11 +17,11 @@ const Footer = () => {
             </div>
 
             <div className='section'>
-                <Link className='navlinks' to="/">Home</Link>
-                <Link className='navlinks' to="/about">About</Link>
-                <Link className='navlinks' to="/strategy">Strategy</Link>
-                <Link className='navlinks' to="/career">Career</Link>
-                <Link className='navlinks' to="/contact">Contact</Link>
+                <Link className='navlinks' to="/" onClick={handleScrollToTop}>Home</Link>
+                <Link className='navlinks' to="/about" onClick={handleScrollToTop}>About</Link>
+                <Link className='navlinks' to="/strategy" onClick={handleScrollToTop}>Strategy</Link>
+                <Link className='navlinks' to="/career" onClick={handleScrollToTop}>Career</Link>
+                <Link className='navlinks' to="/contact" onClick={handleScrollToTop}>Contact</Link>
             </div>
 
             <div className='section'>

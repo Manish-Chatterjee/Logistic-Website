@@ -35,19 +35,24 @@ function OffCanvasExample({ name, ...props }) {
 
   return (
     <>
-      <Button variant="primary" onClick={toggleShow} className="NavButton">
+      <button onClick={toggleShow} className="NavButton">
         <GiHamburgerMenu/>
-      </Button>
+      </button>
       <Offcanvas show={show} onHide={handleClose} placement='end' className="custom-offcanvas" {...props}>
         <Offcanvas.Header closeButton className="custom-offcanvas-header">
           {/* <Offcanvas.Title>Offcanvas</Offcanvas.Title> */}
         </Offcanvas.Header>
         <Offcanvas.Body className="custom-offcanvas-body">
+          <div id='pages'>
             <Link className='navlinks' to="/">Home</Link>
             <Link className='navlinks' to="/about">About</Link>
             <Link className='navlinks' to="/strategy">Strategy</Link>
             <Link className='navlinks' to="/career">Career</Link>
             <Link className='navlinks' to="/contact">Contact</Link>
+          </div>
+          <div id='socials'>
+            socials
+          </div>
         </Offcanvas.Body>
       </Offcanvas>
     </>
