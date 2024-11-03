@@ -11,9 +11,9 @@ const Home = () => {
       <Header/>
        <div id='home'>
          <div id='coldMeetsInnovation'>
-           <h1 id='h1a'>Cold Meets</h1>
-           <h1  id='h1b'>Innovation</h1>
-           <div>
+           <p id='h1a'>Cold Meets</p>
+           <p id='h1b'>Innovation</p>
+           <div id='coldMeetsInnovationContainer'>
              <h2>Keeping Innovation Fresh:</h2>
              <p id="sub">Delivering sustainable freshness, keeping it cool for a better tomorrow, one shipment at a time.</p>
              <div className='button-container'>
@@ -26,7 +26,7 @@ const Home = () => {
            </div>
          </div>
   
-         <div id='ourServicesAndStrategy'>
+         <div id='ourServicesAndStrategy' data-aos="fade-up" data-aos-duration="500" data-aos-offset="200">
            <img src=' https://static.wixstatic.com/media/11062b_8ce3b16ee2c2452a83dc9793a0e80056~mv2.jpg/v1/fill/w_1140,h_1140,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Warehouse%20Shelves%20from%20Above.jpg' alt='img'/>
            <div id='sub'>
               <h1>Our Services and Strategy</h1>
@@ -35,7 +35,7 @@ const Home = () => {
            </div>
          </div>
   
-         <div id='committedToResponsibleLogistics'>
+         <div id='committedToResponsibleLogistics' data-aos="fade-up" data-aos-duration="500" data-aos-offset="200">
           <div>
             <h1>Committed to Responsible Logistics</h1>
             <p>We are dedicated to sustainable practices throughout our cold chain logistics. By optimizing energy use, minimizing waste, and employing eco-friendly packaging, we ensure that your temperature-sensitive products are handled with care for both quality and the environment. Together, we can maintain product integrity while protecting our planet. Let’s make a difference!</p>
@@ -46,7 +46,7 @@ const Home = () => {
           </div>
          </div>
   
-         <div id='careers'>
+         <div id='careers' data-aos="fade-up" data-aos-duration="500" data-aos-offset="200">
             <div id='sub'>
               <h1>Careers</h1>
               <p>Join our dynamic team and be part of a company committed to innovation and excellence in cold chain logistics. We value creativity, collaboration, and a passion for sustainability. Whether you're an experienced professional or just starting your career, we offer opportunities for growth and development in a supportive environment. Explore our current openings and take the next step in your career with us!</p>

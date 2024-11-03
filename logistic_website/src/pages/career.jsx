@@ -9,7 +9,7 @@ const Career = () => {
     <div>
       <Header />
       <div>
-        <div id='careerContainer'>
+        <div id='careerContainer' data-aos="fade-up" data-aos-duration="500" data-aos-offset="200">
           <div className='career'>
             <h2>Working at CafeCold</h2>
             <p>Join the CafeCold team and immerse yourself in a vibrant workplace dedicated to excellence in cold chain logistics. We foster a culture of collaboration, innovation, and sustainability, ensuring that every team member contributes to our mission. With opportunities for growth, professional development, and a supportive environment, you'll be empowered to make an impact. Experience the unique blend of passion and purpose—come grow with us at CafeCold!</p>
@@ -27,7 +27,7 @@ const Career = () => {
             <p>At CafeCold, we provide students with valuable internships and entry-level positions that offer hands-on experience in cold chain logistics. Join us to develop your skills, gain industry insights, and collaborate with professionals while making a meaningful impact on sustainability and innovation. Explore your potential with CafeCold and kickstart your career!</p>
           </div>
         </div>
-        <div id='openRolesContainer'>
+        <div id='openRolesContainer' data-aos="fade-up" data-aos-duration="500" data-aos-offset="200">
           <div className='openRoles'>
             <p>01</p>
             <p>Logistics Coordinator</p>

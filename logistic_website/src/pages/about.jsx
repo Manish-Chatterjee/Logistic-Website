@@ -9,8 +9,8 @@ const About = () => {
     <div>
       <Header />
       <div id='aboutUsMain'>
-            <h1 style={{backgroundColor:"#3e3d35", color:"#f8f8f4", margin:"0", padding:"50px 0 20px 100px", fontSize:"70px", fontWeight:"600"}}>About Us</h1>
-        <div id='aboutUs'>
+            <h1 id='aboutUsHeading'>About Us</h1>
+        <div id='aboutUs' data-aos="fade-up" data-aos-duration="500" data-aos-offset="200">
           <div>
             <p>At the heart of our cold chain logistics is cutting-edge temperature control technology that not only ensures optimal conditions for your products but also provides real-time monitoring and data analytics. Unlike our competitors, we utilize advanced IoT sensors and AI-driven insights to track and manage temperature fluctuations proactively.</p>
             <ol>
@@ -36,8 +36,8 @@ const About = () => {
 
         </div>
 
-        <div id='leaderShip'>
-          <div style={{display:"flex", justifyContent:"space-between"}}>
+        <div id='leaderShip' data-aos="fade-up" data-aos-duration="500" data-aos-offset="200">
+          <div id='leaderShipHeader' style={{display:"flex", justifyContent:"space-between", alignItems:"center"}}>
             <h2>Our <br /> Leadership Team</h2>
             <button>Join our team</button>
           </div>

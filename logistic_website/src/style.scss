@@ -4,6 +4,15 @@ body{
 
     font-family: Arial, Helvetica, sans-serif;
     overflow-x: hidden;
+
+    // max-width: 1280px;
+
+    // Add Flexbox properties
+    display: flex;
+    justify-content: center; // Centers content horizontally
+    align-items: center; // Centers content vertically
+    // height: 100vh; // Full height of the viewport
+    // max-width: 1200px;
 }
 
 body::-webkit-scrollbar {
@@ -57,21 +66,32 @@ button:hover {
 }
 
 .NavButton {
-    background-color: #f8f8f4;
+    background-color: #858584;
     position: absolute; /* Use absolute positioning */
     right: 20px; /* Aligns the button to the right */
     top: 50%; /* Start from the middle of the container */
     transform: translateY(-50%); /* Adjust for the height of the button to center it vertically */
+
+    aspect-ratio: 1/1;
+    border-radius:10px;
+    width: auto;
+    padding: 20px;
+    color: #f8f8f4;
+    font-size: 25px;
+    height: auto;
 }
 
 // .custom-offcanvas {
 //     background-color: #3e3d35; /* Change this to your desired background color */
 //     color: #f8f8f4; /* Optional: Change text color if needed */
 // }
-.custom-offcanvas-header {
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #3e3d35;
-}
+
+// .custom-offcanvas-header {
+//     font-family: Arial, Helvetica, sans-serif;
+//     background-color: #3e3d35;
+
+//     margin: 0;
+// }
 
 .custom-offcanvas-body{
     font-family: Arial, Helvetica, sans-serif;
@@ -164,6 +184,16 @@ button:hover {
 }
 
 #aboutUsMain {
+    max-width: 1550px;
+
+    #aboutUsHeading {
+        background-color: #3e3d35;
+        color: #f8f8f4;
+        margin: 0;
+        padding: 50px 0 20px 100px;
+        font-size: 70px;
+        font-weight: 600;
+    }
 
     #aboutUs {
         font-family: Arial, Helvetica, sans-serif;
@@ -186,6 +216,7 @@ button:hover {
 #leaderShip {
     font-family: Arial, Helvetica, sans-serif;
     padding: 100px;
+    max-width: 1550px;
 
     h2 {
         color: #3e3d35;
@@ -238,17 +269,32 @@ button:hover {
     }
 }
 
-#strategy {
-    font-family: Arial, Helvetica, sans-serif;
+#strategyMain {
     background-color: #f8f8f4;
-    // display: flex;
-    width: 40%;
+    padding: 0 100px;
+    max-width: 1550px;
+
+    h1 {
+        color: #2c222b;
+        margin: 0;
+        font-size: 70px;
+        font-weight: 600;
+        padding: 50px 0 20px 0px; 
+    }
+
+    #strategy {
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #f8f8f4;
+        // display: flex;
+        width: 40%;
+    }
 }
 
 #servicesContainer {
     font-family: Arial, Helvetica, sans-serif;
     display: flex;
     flex-wrap: wrap;
+    max-width: 1550px;
 
     margin: 50px 0;
     padding: 0 100px;
@@ -275,6 +321,7 @@ button:hover {
     font-family: Arial, Helvetica, sans-serif;
     display: flex;
     flex-wrap: wrap;
+    max-width: 1550px;
 
     margin: 50px 0;
     padding: 0 100px;
@@ -299,6 +346,7 @@ button:hover {
 #openRolesContainer {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0 100px 100px 100px;
+    max-width: 1550px;
 
     .openRoles {
         display: flex;
@@ -317,6 +365,8 @@ button:hover {
 
             margin: 0;
             padding: 10px 0;
+
+            text-align: center;
         }
 
         button {
@@ -342,6 +392,20 @@ button:hover {
 
 #formMain {
     font-family: Arial, Helvetica, sans-serif;
+    max-width: 1550px;
+
+    h1 {
+        background-color:#3e3d35;
+        color:#f8f8f4; margin:0;
+        padding:50px 0 0px 100px;
+        font-size:70px;
+        font-weight:600;
+    }
+
+    h2 {
+        font-size: 50px;
+        font-weight: 600;
+    }
 
     hr {
         margin: 0;
@@ -401,19 +465,23 @@ button:hover {
 
 #home {
     font-family: Arial, Helvetica, sans-serif;
-    h1 {
-        color: #3e3d35;
-        font-weight: 600;
-    }
+
+    max-width: 1550px;
 
     #h1a {
         position: relative;
         left: -200px;
+        color: #3e3d35;
+        font-weight: 600;
+        font-size: 100px;
     }
 
     #h1b {
         position: relative;
         right: -200px;
+        color: #3e3d35;
+        font-weight: 600;
+        font-size: 100px;
     }
 
     #coldMeetsInnovation {
@@ -544,17 +612,16 @@ button:hover {
     }
 }
 
-.NavButton {
-    aspect-ratio: 1/1;
-    padding: 20px;
-    margin: 0;
-    width: auto;
-}
+// .NavButton {
+//     aspect-ratio: 1/1;
+//     padding: 20px;
+//     margin: 0;
+//     width: auto;
+// }
 
 .custom-offcanvas-body {
     #pages {
         display: flex;
-        border: 2px solid white;
         justify-content: space-evenly;
         align-items: center;
         flex-direction: column;
@@ -565,10 +632,299 @@ button:hover {
     #socials {
         display: flex;
         flex-direction: row;
-        border: 1px solid grey;
         height: 20%;
 
         justify-content: space-evenly;
         align-items: center;
+
+        font-size: 40px;
+        color: #f8f8f4;
+    }
+}
+
+@media (max-width: 840px) {
+    #home {
+        #h1a, #h1b {
+            position: relative;
+            left: auto;
+            right: auto;
+
+            font-size: 10vw;
+        }
+
+        #ourServicesAndStrategy {
+            img {
+                width: 100%;
+            }
+
+            #sub {
+                width: 100%;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+
+        #committedToResponsibleLogistics {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        #careers {
+            #sub {
+                width: 100%;
+                align-items: center;
+            }
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    #aboutUsMain {
+        padding: 0;
+
+        #aboutUsHeading {
+            font-size: 100px;
+            // padding: 20px 0;
+            margin: 0;
+        }
+        #aboutUs {
+            // padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+        }
+    }
+
+    #pages {
+        margin-top: 30px;
+        .navlinks {
+            font-size: 38px;
+        }
+    }
+
+    .custom-offcanvas-body {
+        #custom-close-button {
+            position: absolute;
+            right: 11px;
+            top: 15px;
+            color:#f8f8f4;
+            font-size: 40px;
+
+            margin: 0;
+            padding: 0;
+            aspect-ratio: 1/1;
+            display: flex;
+            justify-content: center;
+            border-radius: 10px;
+        }
+    }
+
+    #formMain {
+        width: 100vw;
+    }
+}
+
+@media (max-width: 480px) {
+    #home {
+        padding: 0;
+        #h1a, #h1b {
+            position: relative;
+            left: auto;
+            right: auto;
+
+            font-size: 15vw;
+            width: 100vw;
+        }
+
+        #coldMeetsInnovation {
+            padding: 0;
+
+            #coldMeetsInnovationContainer {
+                padding: 20px;
+
+                .button-container {
+    
+                    #button1 {
+                        left: 50%;
+                        transform: translate(-50%);
+                        margin: 0;
+                        width: 200px;
+    
+                        display: flex;
+                        justify-content: center;
+                    }
+    
+                    #button2 {
+                        left: 50%;
+                        transform: translate(-50%);
+                        margin: 10px 0;
+    
+                        width: 200px;
+    
+                        display: flex;
+                        justify-content: center;
+                    }
+                }
+            }
+
+        }
+
+        #ourServicesAndStrategy {
+            padding: 20px 20px 0 20px;
+            img {
+                width: 100%;
+            }
+
+            #sub {
+                width: 100%;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+
+        #committedToResponsibleLogistics {
+            padding: 0 20px;
+            text-align: center;
+        }
+
+        #careers {
+            padding: 0 20px 20px 20px;
+            #sub {
+                width: 100%;
+                align-items: center;
+            }
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    #aboutUsMain {
+        padding: 0;
+
+        #aboutUsHeading {
+            font-size: 50px;
+            padding: 20px;
+            margin: 0;
+        }
+        #aboutUs {
+            padding: 0 20px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        #leaderShip {
+            padding: 0;
+
+            #leaderShipHeader {
+                display: flex;
+                flex-direction: column;
+
+                h2 {
+                    margin-top: 50px;
+                }
+
+                button {
+                    margin-top: 20px;
+                }
+            }
+        }
+    }
+
+    #strategyMain {
+        padding: 20px;
+
+        h1 {
+            padding: 0;
+        }
+
+        #strategy {
+            width: 100%;
+        }
+
+    }
+
+    #servicesContainer {
+        padding: 20px;
+
+        .services {
+            flex: 100%;
+            padding: 0;
+        }
+    }
+
+    #careerContainer {
+        padding: 20px;
+        margin: 0;
+
+        .career {
+            flex: 100%;
+            padding: 0;
+        }
+    }
+
+    #openRolesContainer {
+        margin: 0;
+
+        .openRoles {
+
+            p {
+                font-size: 25px;
+                text-align: center;
+            }
+        }
+    }
+
+    #formMain {
+        padding: 0;
+
+        h1 {
+            padding: 20px;
+        }
+
+        .formContainer {
+            padding: 50px 20px;
+            flex-direction: column;
+            gap: 50px;
+
+            .section1 {
+                width: 100%;
+            }
+
+            .section2 {
+                width: 100%;
+            }
+        }
+    }
+
+    #pages {
+        .navlinks {
+            font-size: 30px;
+        }
+    }
+
+    .custom-offcanvas-body {
+        #custom-close-button {
+            position: absolute;
+            right: 5px;
+            top: 5px;
+            color:#f8f8f4;
+            font-size: 40px;
+
+            margin: 0;
+            padding: 0;
+            aspect-ratio: 1/1;
+            display: flex;
+            justify-content: center;
+            border-radius: 10px;
+        }
+    }
+
+    #header {
+        height: 100px;
+        margin: 0;
+        padding: 20px;
     }
 }

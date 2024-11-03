@@ -4,6 +4,10 @@ import Offcanvas from 'react-bootstrap/Offcanvas';
 import { GiHamburgerMenu } from "react-icons/gi";
 import { Link } from 'react-router-dom';
 
+import { FaFacebookSquare, FaLinkedin } from "react-icons/fa";
+import { FaSquareFacebook, FaSquareXTwitter } from 'react-icons/fa6';
+import { MdOutlineClose } from 'react-icons/md';
+
 const options = [
 //   {
 //     name: 'Enable backdrop (default)',
@@ -39,10 +43,11 @@ function OffCanvasExample({ name, ...props }) {
         <GiHamburgerMenu/>
       </button>
       <Offcanvas show={show} onHide={handleClose} placement='end' className="custom-offcanvas" {...props}>
-        <Offcanvas.Header closeButton className="custom-offcanvas-header">
+        {/* <Offcanvas.Header closeButton className="custom-offcanvas-header"> */}
           {/* <Offcanvas.Title>Offcanvas</Offcanvas.Title> */}
-        </Offcanvas.Header>
+        {/* </Offcanvas.Header> */}
         <Offcanvas.Body className="custom-offcanvas-body">
+          <button id='custom-close-button' onClick={handleClose}><MdOutlineClose /></button>
           <div id='pages'>
             <Link className='navlinks' to="/">Home</Link>
             <Link className='navlinks' to="/about">About</Link>
@@ -51,7 +56,9 @@ function OffCanvasExample({ name, ...props }) {
             <Link className='navlinks' to="/contact">Contact</Link>
           </div>
           <div id='socials'>
-            socials
+            <FaSquareFacebook />
+            <FaLinkedin />
+            <FaSquareXTwitter />
           </div>
         </Offcanvas.Body>
       </Offcanvas>
