@@ -57,7 +57,7 @@ const Contact = () => {
             <form onSubmit={handleSubmit}>
               <div>
                 <label>
-                  First Name<br />
+                  First Name
                   <input 
                     type="text" 
                     name="firstName" 

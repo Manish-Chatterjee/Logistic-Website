@@ -19,6 +19,14 @@ body::-webkit-scrollbar {
     display: none;
 }
 
+p {
+    font-size: 18px;
+}
+
+li  {
+    font-size: 18px;
+}
+
 button {
     padding: 15px 40px;
     border: 1px solid #3e3d35;
@@ -432,14 +440,25 @@ button:hover {
             width: 60%;
             color: #f8f8f4;
 
-            // border: 2px dotted white;
+            p {
+                margin: 0;
+                padding: 0;
+
+                width: 100%;
+            }
+
+            label {
+                width: 100%;
+            }
+
 
             input, textarea {
                 background-color: #3e3d35;
                 border: none;
                 border-bottom: 0.5px solid  #f8f8f4;
                 margin: 10px 0 30px 0;
-                width: 400px;
+                // width: 400px;
+                width: 100%;
             }
 
             #checkbox {
@@ -492,13 +511,14 @@ button:hover {
         // border: 1px solid black;
         position: relative;
 
-        h1 {
-            font-size: 135px;
-        }
+        // h1 {
+        //     font-size: 135px;
+        // }
 
         h2 {
             font-size: 70px;
             text-align: left;
+            color: #2c222b;
         }
 
         #sub {
@@ -652,6 +672,14 @@ button:hover {
             font-size: 10vw;
         }
 
+        #coldMeetsInnovation {
+            #coldMeetsInnovationContainer {
+                h2 {
+                    font-size: 60px;
+                }
+            }
+        }
+
         #ourServicesAndStrategy {
             img {
                 width: 100%;
@@ -743,6 +771,10 @@ button:hover {
 
             #coldMeetsInnovationContainer {
                 padding: 20px;
+
+                h2 {
+                    font-size: 40px;
+                }
 
                 .button-container {
     
@@ -878,6 +910,7 @@ button:hover {
     }
 
     #formMain {
+        overflow: scroll;
         padding: 0;
 
         h1 {
@@ -891,10 +924,15 @@ button:hover {
 
             .section1 {
                 width: 100%;
+
             }
 
             .section2 {
                 width: 100%;
+
+                input, textarea {
+                    width: 100%;
+                }
             }
         }
     }
