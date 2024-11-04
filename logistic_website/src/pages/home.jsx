@@ -3,6 +3,7 @@ import React from 'react';
 import Header from '../component/Header';
 import Footer from '../component/Footer';
 import { Button } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 const Home = () => {
   return (
@@ -17,10 +18,14 @@ const Home = () => {
              <h2>Keeping Innovation Fresh:</h2>
              <p id="sub">Delivering sustainable freshness, keeping it cool for a better tomorrow, one shipment at a time.</p>
              <div className='button-container'>
+              <Link to="/about" className='navlinks'>
                 <button className="button" id='button1'>Learn More</button>
+              </Link>
              </div>
              <div className='button-container'>
+              <Link to="/contact" className='navlinks'>
                 <button className="button" id='button2'>CONTACT US</button>
+              </Link>
              </div>
              <p id='servicesSupply'>LOCAL, REGIONAL, AND NATIONWIDE TRANSPORTATION SERVICES</p>
            </div>
@@ -31,7 +36,9 @@ const Home = () => {
            <div id='sub'>
               <h1>Our Services and Strategy</h1>
               <p>In temperature-controlled transportation, precision is key. Ensuring that materials are kept at the right temperature throughout their journey is critical for maintaining quality and compliance. We specialize in managing these intricate logistics, handling everything.</p>
+              <Link to="/strategy" className='navlinks'>
               <button className="button">Know More</button>
+              </Link>
            </div>
          </div>
   
@@ -50,7 +57,9 @@ const Home = () => {
             <div id='sub'>
               <h1>Careers</h1>
               <p>Join our dynamic team and be part of a company committed to innovation and excellence in cold chain logistics. We value creativity, collaboration, and a passion for sustainability. Whether you're an experienced professional or just starting your career, we offer opportunities for growth and development in a supportive environment. Explore our current openings and take the next step in your career with us!</p>
+              <Link to="/career" className='navlinks'>
               <button className="button">Work With Us</button>
+              </Link>
             </div>
            <img src='https://static.wixstatic.com/media/84770f_a37f07130daf43ee9876e1ca2575342f~mv2.webp/v1/fill/w_768,h_806,al_c,q_85,enc_auto/0b340f_8c1b85ad307a4ac98f252224bdb3c9b4~mv2.webp' alt='imgLadder'/>
          </div>
