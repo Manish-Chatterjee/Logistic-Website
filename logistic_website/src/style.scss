@@ -662,6 +662,62 @@ button:hover {
     }
 }
 
+#openRolesMain {
+
+    .accordionSub {
+        // background-color: #2c222b;
+        padding: 10px 0;
+        transition: 150ms ease;
+    }
+
+    .accordionSub:hover {
+        padding: 30px 0;
+        transition: 150ms ease;
+        background-color: #ededed;
+    }
+
+    .accordion-button {
+        color: rgb(94, 87, 79);
+        font-weight: 600;
+        background-color: transparent;
+        border: none;
+        margin: 0;
+        padding: 0;
+        // display: flex;
+        // align-items: center;
+        // justify-content: center;
+        width: 100vw;
+
+        cursor: pointer;
+
+        &:focus {
+            outline: none;
+        }
+    }
+    .openRolesHeading {
+        font-size: 45px;
+        // background-color: #858584;
+        width: 100%;
+        padding: 30px 70px;
+        margin: 0;
+        height: 100px;
+        display: flex;
+        align-items: center;
+
+        // border: 2px dotted green;
+    }
+
+    .openRolesBody {
+        color: #3e3d35;
+        margin: 50px 20px;
+        .applyTag {
+            font-size: 22px;
+        }
+
+    }
+    
+}
+
 @media (max-width: 840px) {
     #home {
         #h1a, #h1b {
@@ -964,5 +1020,12 @@ button:hover {
         height: 100px;
         margin: 0;
         padding: 20px;
+    }
+
+    #openRolesMain {
+        
+        .openRolesHeading {
+            font-size: 25px;
+        }
     }
 }

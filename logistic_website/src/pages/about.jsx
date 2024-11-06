@@ -3,6 +3,7 @@ import React from 'react';
 import Header from '../component/Header';
 import Footer from '../component/Footer';
 import { Button } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 const About = () => {
   return (
@@ -39,7 +40,9 @@ const About = () => {
         <div id='leaderShip' data-aos="fade-up" data-aos-duration="500" data-aos-offset="200">
           <div id='leaderShipHeader' style={{display:"flex", justifyContent:"space-between", alignItems:"center"}}>
             <h2>Our <br /> Leadership Team</h2>
+            <Link to='/openRoles' className='navlinks'>
             <button>Join our team</button>
+            </Link>
           </div>
           <div id='profiles'>
             <div className='individual'>

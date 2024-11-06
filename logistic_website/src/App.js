@@ -6,6 +6,7 @@ import About from './pages/about';
 import Strategy from './pages/strategy';
 import Career from './pages/career';
 import Contact from './pages/contact';
+import OpenRoles from './pages/openRoles';
 
 import 'aos/dist/aos.css'; // Import AOS CSS
 import AOS from 'aos'; // Import AOS JavaScript
@@ -27,6 +28,7 @@ const App = () => {
           <Route path="/strategy" element={<Strategy />} />
           <Route path="/career" element={<Career />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/openRoles" element={<OpenRoles />} />
         </Routes>
       </Router>
   );
