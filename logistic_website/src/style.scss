@@ -282,6 +282,10 @@ button:hover {
     padding: 0 100px;
     max-width: 1550px;
 
+    #strategyHeading {
+        font-size: 60px;
+    }
+
     h1 {
         color: #2c222b;
         margin: 0;
@@ -401,6 +405,10 @@ button:hover {
 #formMain {
     font-family: Arial, Helvetica, sans-serif;
     max-width: 1550px;
+
+    #contactHeading {
+        font-size: 60px;
+    }
 
     h1 {
         background-color:#3e3d35;
@@ -811,6 +819,7 @@ button:hover {
 }
 
 @media (max-width: 480px) {
+
     #home {
         padding: 0;
         #h1a, #h1b {
@@ -1020,6 +1029,13 @@ button:hover {
         height: 100px;
         margin: 0;
         padding: 20px;
+
+        #company {
+
+            .companyTitle {
+                font-size: 16px;
+            }
+        }
     }
 
     #openRolesMain {

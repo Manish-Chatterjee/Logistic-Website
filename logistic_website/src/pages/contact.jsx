@@ -46,7 +46,7 @@ const Contact = () => {
     <div id='formMain'>
         <Header />
       <div data-aos="fade-up" data-aos-duration="500" data-aos-offset="200">
-        <h1>Contact</h1>
+        <h1 id='contactHeading'>Contact</h1>
         <div className='formContainer'>
           <div className='section1'>
             <p>We’d love to hear from you! For inquiries, support, or to learn more about our services, reach out to us:</p>

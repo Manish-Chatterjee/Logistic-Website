@@ -9,7 +9,7 @@ const Strategy = () => {
       <Header />
       <div data-aos="fade-up" data-aos-duration="500" data-aos-offset="200">
         <div id="strategyMain">
-          <h1>Services and<br />Strategy</h1>
+          <h1 id='strategyHeading'>Services and<br />Strategy</h1>
           <div style={{display:"flex"}}>
             <div id='strategy'>
               <p>In temperature-controlled transportation, precision is key. Ensuring that materials are kept at the right temperature throughout their journey is critical for maintaining quality and compliance. We specialize in managing these intricate logistics, handling everything from inventory tracking to regulatory adherence. With our expertise, you can trust that your temperature-sensitive products are in good hands, allowing you to concentrate on your core business while we ensure smooth, reliable transport.</p>
