@@ -6,6 +6,11 @@ import { Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
 const About = () => {
+
+  const handleScrollToTop = () => {
+    window.scrollTo(0, 0);
+  };
+
   return (
     <div>
       <Header />
@@ -40,7 +45,7 @@ const About = () => {
         <div id='leaderShip' data-aos="fade-up" data-aos-duration="500" data-aos-offset="200">
           <div id='leaderShipHeader' style={{display:"flex", justifyContent:"space-between", alignItems:"center"}}>
             <h2>Our <br /> Leadership Team</h2>
-            <Link to='/openRoles' className='navlinks'>
+            <Link to='/openRoles' onClick={handleScrollToTop} className='navlinks'>
             <button>Join our team</button>
             </Link>
           </div>

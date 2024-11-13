@@ -11,9 +11,11 @@ const Footer = () => {
   return (
     <div id='footer'>
         <div className='sections-container'>
-            <div className='section'>
-                <p className='companyName'>CAFECOLD</p>
-                <p className='companyTitle'>From frost to freight. Always Cool</p>
+            <div className='section' id='titleMobile'>
+                <Link to='/' onClick={handleScrollToTop} style={{textDecoration:"none"}}>
+                    <p className='companyName'>CAFECOLD</p>
+                    <p className='companyTitle'>From frost to freight. Always Cool</p>
+                </Link>
             </div>
 
             <div className='section'>

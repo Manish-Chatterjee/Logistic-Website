@@ -2,12 +2,18 @@ import React from 'react'
 import Header from '../component/Header'
 import Footer from '../component/Footer'
 import { Accordion } from 'react-bootstrap'
+import { useLocation } from 'react-router-dom'
 
-const openRoles = () => {
+const OpenRoles = () => {
+
+    const location = useLocation();
+    const queryParams = new URLSearchParams(location.search);
+    const activeAccordionKey = queryParams.get('accordion'); // Get the 'accordion' parameter
+
   return (
     <div>
         <Header/>
-        <Accordion style={{marginTop:"50px"}}>
+        <Accordion style={{marginTop:"50px"}} defaultActiveKey={activeAccordionKey}>
                 <div id='openRolesMain'>
             <Accordion.Item eventKey="0" className='accordionSub'>
                     <Accordion.Header>
@@ -108,6 +114,68 @@ const openRoles = () => {
 
             <Accordion.Item eventKey="2" className='accordionSub'>
                     <Accordion.Header>
+                        <p className='openRolesHeading'>Warehouse Supervisor</p>
+                    </Accordion.Header>
+                    <Accordion.Body>
+                        <p className='openRolesBody'>
+                            <p>Location: Bangalore <br/>
+                            Company: Cafe Cold <br />
+                            Job Type: Full-Time  <b>ob ID: CC-1013</b></p>
+
+                            <p><b>About Us:</b> Cafe Cold is dedicated to providing exceptional products and services while fostering a dynamic and innovative workplace. Our mission is to deliver quality and sustainability in every cup.<br />
+                            <b>Job Summary:</b> The Warehouse Supervisor is responsible for overseeing daily warehouse operations, ensuring efficient and accurate handling of inventory, and managing a team of warehouse staff. This role requires strong leadership skills, a focus on safety and compliance, and the ability to optimize warehouse processes.</p> 
+
+                            <p><b>Key Responsibilities:</b></p>
+                            <ul>
+                                <li>High school diploma or equivalent; bachelor’s degree in logistics, supply chain management, or related field preferred.</li>
+                                <li>Proven experience in warehouse management or supervisory role (3+ years preferred).</li>
+                                <li>Strong knowledge of warehouse operations and inventory management systems.</li>
+                                <li>Excellent leadership and team management skills.</li>
+                                <li>Proficient in using warehouse management software and Microsoft Office Suite.</li>
+                                <li>Strong organizational skills and attention to detail.</li>
+                                <li>Effective communication and problem-solving abilities.</li>
+                                <li>Ability to work in a fast-paced environment and manage multiple tasks simultaneously.</li>
+                                <li>Forklift certification (or willingness to obtain) is a plus.</li>
+                                <li>Prepare and present reports on supply chain performance to senior management.</li>
+                            </ul>
+
+                            <p><b>Education:</b></p>
+                            <ul>
+                                <li>High school diploma or equivalent; a bachelor’s degree in logistics, supply chain management, business administration, or a related field is preferred.</li>
+                            </ul>
+
+                            <p><b>Experience:</b></p>
+                            <ul>
+                                <li>1+ years of experience in warehouse operations, logistics, or supply chain management.</li>
+                                <li>Previous supervisory or management experience in a warehouse setting is highly desirable.</li>
+                            </ul>
+
+                            <p><b>Skills:</b></p>
+                            <ul>
+                                <li>Strong understanding of warehouse management systems (WMS) and inventory control processes.</li>
+                                <li>Proficiency in Microsoft Office Suite (Excel, Word, Outlook) and familiarity with warehouse management software.</li>
+                                <li>Excellent leadership and team-building skills, with the ability to motivate and manage a diverse team.</li>
+                                <li>Strong organizational and time-management skills, with a keen attention to detail.</li>
+                                <li>Effective verbal and written communication skills.</li>
+                            </ul>
+
+                            <p><b>Benefits:</b></p>
+                            <ul>
+                                <li>Competitive salary and performance-based bonuses.</li>
+                                <li>Health, dental, and retirement benefits.</li>
+                                <li>Opportunities for career advancement and professional development.</li>
+                                <li>Competitive salary and benefits package.</li>
+                                <li>Opportunities for professional growth and development.</li>
+                                <li>A collaborative and innovative work environment.</li>
+                            </ul>
+                        <p className='applyTag'><b>How to Apply:</b></p>
+                        <p className='applyTag'><b>Interested candidates should submit their resume and a cover letter to careers@cafecold.com and hr@cafecold.com</b></p>
+                        </p>
+                    </Accordion.Body>
+            </Accordion.Item>
+
+            <Accordion.Item eventKey="3" className='accordionSub'>
+                    <Accordion.Header>
                         <p className='openRolesHeading'>Freight Forwarder</p>
                     </Accordion.Header>
                     <Accordion.Body>
@@ -170,7 +238,7 @@ const openRoles = () => {
                     </Accordion.Body>
             </Accordion.Item>
 
-            <Accordion.Item eventKey="3" className='accordionSub'>
+            <Accordion.Item eventKey="4" className='accordionSub'>
                     <Accordion.Header>
                         <p className='openRolesHeading'>Customer Service Expert</p>
                     </Accordion.Header>
@@ -224,68 +292,6 @@ const openRoles = () => {
                                 <li>Strong attention to detail and ability to multitask.</li>
                                 <li>Empathetic and approachable demeanor with a genuine desire to help customers.</li>
                                 <li>Ability to work independently and as part of a team.</li>
-                            </ul>
-                        <p className='applyTag'><b>How to Apply:</b></p>
-                        <p className='applyTag'><b>Interested candidates should submit their resume and a cover letter to careers@cafecold.com and hr@cafecold.com</b></p>
-                        </p>
-                    </Accordion.Body>
-            </Accordion.Item>
-
-            <Accordion.Item eventKey="4" className='accordionSub'>
-                    <Accordion.Header>
-                        <p className='openRolesHeading'>Warehouse Supervisor</p>
-                    </Accordion.Header>
-                    <Accordion.Body>
-                        <p className='openRolesBody'>
-                            <p>Location: Bangalore <br/>
-                            Company: Cafe Cold <br />
-                            Job Type: Full-Time  <b>ob ID: CC-1013</b></p>
-
-                            <p><b>About Us:</b> Cafe Cold is dedicated to providing exceptional products and services while fostering a dynamic and innovative workplace. Our mission is to deliver quality and sustainability in every cup.<br />
-                            <b>Job Summary:</b> The Warehouse Supervisor is responsible for overseeing daily warehouse operations, ensuring efficient and accurate handling of inventory, and managing a team of warehouse staff. This role requires strong leadership skills, a focus on safety and compliance, and the ability to optimize warehouse processes.</p> 
-
-                            <p><b>Key Responsibilities:</b></p>
-                            <ul>
-                                <li>High school diploma or equivalent; bachelor’s degree in logistics, supply chain management, or related field preferred.</li>
-                                <li>Proven experience in warehouse management or supervisory role (3+ years preferred).</li>
-                                <li>Strong knowledge of warehouse operations and inventory management systems.</li>
-                                <li>Excellent leadership and team management skills.</li>
-                                <li>Proficient in using warehouse management software and Microsoft Office Suite.</li>
-                                <li>Strong organizational skills and attention to detail.</li>
-                                <li>Effective communication and problem-solving abilities.</li>
-                                <li>Ability to work in a fast-paced environment and manage multiple tasks simultaneously.</li>
-                                <li>Forklift certification (or willingness to obtain) is a plus.</li>
-                                <li>Prepare and present reports on supply chain performance to senior management.</li>
-                            </ul>
-
-                            <p><b>Education:</b></p>
-                            <ul>
-                                <li>High school diploma or equivalent; a bachelor’s degree in logistics, supply chain management, business administration, or a related field is preferred.</li>
-                            </ul>
-
-                            <p><b>Experience:</b></p>
-                            <ul>
-                                <li>1+ years of experience in warehouse operations, logistics, or supply chain management.</li>
-                                <li>Previous supervisory or management experience in a warehouse setting is highly desirable.</li>
-                            </ul>
-
-                            <p><b>Skills:</b></p>
-                            <ul>
-                                <li>Strong understanding of warehouse management systems (WMS) and inventory control processes.</li>
-                                <li>Proficiency in Microsoft Office Suite (Excel, Word, Outlook) and familiarity with warehouse management software.</li>
-                                <li>Excellent leadership and team-building skills, with the ability to motivate and manage a diverse team.</li>
-                                <li>Strong organizational and time-management skills, with a keen attention to detail.</li>
-                                <li>Effective verbal and written communication skills.</li>
-                            </ul>
-
-                            <p><b>Benefits:</b></p>
-                            <ul>
-                                <li>Competitive salary and performance-based bonuses.</li>
-                                <li>Health, dental, and retirement benefits.</li>
-                                <li>Opportunities for career advancement and professional development.</li>
-                                <li>Competitive salary and benefits package.</li>
-                                <li>Opportunities for professional growth and development.</li>
-                                <li>A collaborative and innovative work environment.</li>
                             </ul>
                         <p className='applyTag'><b>How to Apply:</b></p>
                         <p className='applyTag'><b>Interested candidates should submit their resume and a cover letter to careers@cafecold.com and hr@cafecold.com</b></p>
@@ -352,9 +358,9 @@ const openRoles = () => {
                 </div>
 
         </Accordion>
-        {/* <Footer/> */}
+        <Footer/>
     </div>
   )
 }
 
-export default openRoles
+export default OpenRoles

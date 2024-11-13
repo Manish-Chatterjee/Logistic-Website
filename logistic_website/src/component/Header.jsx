@@ -20,21 +20,27 @@ const Header = () => {
     };
   }, []);
 
+  const handleScrollToTop = () => {
+    window.scrollTo(0, 0);
+  };
+
   return (
     <div id='header'>
         <div id='company'>
+          <Link to='/' onClick={handleScrollToTop} style={{textDecoration:"none"}}>
             <p className='companyName'>CAFECOLD</p>
             <p className='companyTitle'>From frost to freight. Always Cool.</p>
+          </Link>
         </div>
 
         {isMobileOrTablet ? <NavSidebar/> :
         <div id='nav'>
         
-            <Link className='navlinks' to="/">Home</Link>
-            <Link className='navlinks' to="/about">About</Link>
-            <Link className='navlinks' to="/strategy">Strategy</Link>
-            <Link className='navlinks' to="/career">Career</Link>
-            <Link className='navlinks' to="/contact">Contact</Link>
+            <Link className='navlinks' to="/" onClick={handleScrollToTop}>Home</Link>
+            <Link className='navlinks' to="/about" onClick={handleScrollToTop}>About</Link>
+            <Link className='navlinks' to="/strategy" onClick={handleScrollToTop}>Strategy</Link>
+            <Link className='navlinks' to="/career" onClick={handleScrollToTop}>Career</Link>
+            <Link className='navlinks' to="/contact" onClick={handleScrollToTop}>Contact</Link>
           
         </div>}
     </div>

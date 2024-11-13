@@ -5,14 +5,11 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     overflow-x: hidden;
 
-    // max-width: 1280px;
-
     // Add Flexbox properties
     display: flex;
     justify-content: center; // Centers content horizontally
     align-items: center; // Centers content vertically
     // height: 100vh; // Full height of the viewport
-    // max-width: 1200px;
 }
 
 body::-webkit-scrollbar {
@@ -89,17 +86,6 @@ button:hover {
     height: auto;
 }
 
-// .custom-offcanvas {
-//     background-color: #3e3d35; /* Change this to your desired background color */
-//     color: #f8f8f4; /* Optional: Change text color if needed */
-// }
-
-// .custom-offcanvas-header {
-//     font-family: Arial, Helvetica, sans-serif;
-//     background-color: #3e3d35;
-
-//     margin: 0;
-// }
 
 .custom-offcanvas-body{
     font-family: Arial, Helvetica, sans-serif;
@@ -117,16 +103,13 @@ button:hover {
     padding: 40px;
 
     #company {
-        // border: 3px solid white;
         width: 50%;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        // padding-left: 50px;
     }
 
     #nav {
-        // border: 5px solid white;
         width: 50%;
         display: flex;
         justify-content: space-evenly;
@@ -140,7 +123,6 @@ button:hover {
     font-family: Arial, Helvetica, sans-serif;
     width: 100%;
     height: auto; // Adjust height as needed
-    // height: 447px;
     background-color: #3e3d35;
     display: flex;
     flex-direction: column;
@@ -154,7 +136,6 @@ button:hover {
         flex-wrap: wrap;
 
         .section {
-            // border: 2px solid white;
             flex: 1; // This will make all sections equal in width
 
             display: flex;
@@ -232,11 +213,6 @@ button:hover {
         font-size: 40px;
     }
 
-    // button {
-    //     background-color: #3e3d35;
-    //     border: none;
-    //     height: 50px;
-    // }
 
     #profiles {
         display: flex;
@@ -297,7 +273,6 @@ button:hover {
     #strategy {
         font-family: Arial, Helvetica, sans-serif;
         background-color: #f8f8f4;
-        // display: flex;
         width: 40%;
     }
 }
@@ -465,7 +440,6 @@ button:hover {
                 border: none;
                 border-bottom: 0.5px solid  #f8f8f4;
                 margin: 10px 0 30px 0;
-                // width: 400px;
                 width: 100%;
             }
 
@@ -516,12 +490,8 @@ button:hover {
         padding: 40px 100px;
 
         text-align: center;
-        // border: 1px solid black;
         position: relative;
 
-        // h1 {
-        //     font-size: 135px;
-        // }
 
         h2 {
             font-size: 70px;
@@ -534,8 +504,6 @@ button:hover {
         }
 
         #servicesSupply {
-            // border: 2px solid grey;
-            // position: absolute;
             width: auto;
             margin: 50px 0 0 0;
         }
@@ -544,7 +512,6 @@ button:hover {
             display: flex;
             flex-wrap: wrap;
             width: 100%;
-            // border: 2px solid gold;
             height: 30px;
 
             position: relative;
@@ -582,18 +549,8 @@ button:hover {
 
             width: 40%;
 
-            // border: 2px dotted brown;
             padding: 80px 0;
 
-            // h1 {
-            //     position: relative;
-            //     left: -50px;
-            // }
-
-            // button {
-            //     position: relative;
-            //     left: 30px;
-            // }
         }
     }
 
@@ -605,7 +562,6 @@ button:hover {
         justify-content: space-between;
         gap: 50px;
 
-        // border: 2px solid yellow;
 
         h1 {
             padding-bottom: 20px;
@@ -627,8 +583,6 @@ button:hover {
 
             width: 40%;
 
-            // border: 2px dotted brown;
-            // padding: 80px 0;
             margin: 30px 0;
         }
 
@@ -640,12 +594,7 @@ button:hover {
     }
 }
 
-// .NavButton {
-//     aspect-ratio: 1/1;
-//     padding: 20px;
-//     margin: 0;
-//     width: auto;
-// }
+
 
 .custom-offcanvas-body {
     #pages {
@@ -672,8 +621,9 @@ button:hover {
 
 #openRolesMain {
 
+    margin: 50px 0;
+
     .accordionSub {
-        // background-color: #2c222b;
         padding: 10px 0;
         transition: 150ms ease;
     }
@@ -691,20 +641,22 @@ button:hover {
         border: none;
         margin: 0;
         padding: 0;
-        // display: flex;
-        // align-items: center;
-        // justify-content: center;
         width: 100vw;
+
 
         cursor: pointer;
 
         &:focus {
             outline: none;
+            box-shadow: none;
+        }
+
+        &.active {
+            border: none;
         }
     }
     .openRolesHeading {
         font-size: 45px;
-        // background-color: #858584;
         width: 100%;
         padding: 30px 70px;
         margin: 0;
@@ -712,12 +664,12 @@ button:hover {
         display: flex;
         align-items: center;
 
-        // border: 2px dotted green;
     }
 
     .openRolesBody {
         color: #3e3d35;
         margin: 50px 20px;
+
         .applyTag {
             font-size: 22px;
         }
@@ -779,11 +731,9 @@ button:hover {
 
         #aboutUsHeading {
             font-size: 100px;
-            // padding: 20px 0;
             margin: 0;
         }
         #aboutUs {
-            // padding: 0;
             display: flex;
             flex-wrap: wrap;
         }
@@ -970,6 +920,12 @@ button:hover {
             p {
                 font-size: 25px;
                 text-align: center;
+
+                margin: 0 10px;
+            }
+
+            .navlinks {
+                font-size: 16px;
             }
         }
     }
@@ -1032,8 +988,22 @@ button:hover {
 
         #company {
 
+            .companyName {
+                font-size: 25px;
+            }
+
             .companyTitle {
                 font-size: 16px;
+            }
+        }
+    }
+
+    #footer {
+        padding: 20px;
+
+        .sections-container {
+            #titleMobile {
+                flex: 1 1 100%;
             }
         }
     }

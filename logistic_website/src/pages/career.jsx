@@ -3,8 +3,14 @@ import React from 'react';
 import Header from '../component/Header';
 import Footer from '../component/Footer';
 import { Button } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 const Career = () => {
+
+  const handleScrollToTop = () => {
+    window.scrollTo(0, 0);
+  };
+
   return (
     <div>
       <Header />
@@ -31,32 +37,40 @@ const Career = () => {
           <div className='openRoles'>
             <p>01</p>
             <p>Logistics Coordinator</p>
-            <button>Apply now</button>
+            <Link to="/openRoles?accordion=0" onClick={handleScrollToTop} className='navlinks'>
+              <button>Apply now</button>
+            </Link>
           </div>
           <div className='openRoles'>
             <p>02</p>
             <p>Supply Chain Manager</p>
-            <button>Apply now</button>
-          </div>
+            <Link to="/openRoles?accordion=1" onClick={handleScrollToTop} className='navlinks'>
+              <button>Apply now</button>
+            </Link>          </div>
           <div className='openRoles'>
             <p>03</p>
             <p>Warehouse Supervisor</p>
-            <button>Apply now</button>
-          </div>
+            <Link to="/openRoles?accordion=2" onClick={handleScrollToTop} className='navlinks'>
+              <button>Apply now</button>
+            </Link>          </div>
           <div className='openRoles'>
             <p>04</p>
             <p>Freight Forwarder</p>
-            <button>Apply now</button>
-          </div>
+            <Link to="/openRoles?accordion=3" onClick={handleScrollToTop} className='navlinks'>
+              <button>Apply now</button>
+            </Link>          </div>
           <div className='openRoles'>
             <p>05</p>
             <p>Customer Service Expert</p>
-            <button>Apply now</button>
-          </div>
+            <Link to="/openRoles?accordion=4" onClick={handleScrollToTop} className='navlinks'>
+              <button>Apply now</button>
+            </Link>          </div>
           <div className='openRoles'>
             <p>06</p>
             <p>Inventory Control Specialist</p>
-            <button>Apply now</button>
+            <Link to="/openRoles?accordion=5" onClick={handleScrollToTop} className='navlinks'>
+              <button>Apply now</button>
+            </Link>          
           </div>
         </div>
       </div>

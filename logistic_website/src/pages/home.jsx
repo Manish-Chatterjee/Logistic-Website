@@ -6,6 +6,11 @@ import { Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
 const Home = () => {
+
+  const handleScrollToTop = () => {
+    window.scrollTo(0, 0);
+  };
+
   return (
     <div>
 
@@ -18,12 +23,12 @@ const Home = () => {
              <h2>Keeping Innovation Fresh:</h2>
              <p id="sub">Delivering sustainable freshness, keeping it cool for a better tomorrow, one shipment at a time.</p>
              <div className='button-container'>
-              <Link to="/about" className='navlinks'>
+              <Link to="/about" onClick={handleScrollToTop} className='navlinks'>
                 <button className="button" id='button1'>Learn More</button>
               </Link>
              </div>
              <div className='button-container'>
-              <Link to="/contact" className='navlinks'>
+              <Link to="/contact" onClick={handleScrollToTop} className='navlinks'>
                 <button className="button" id='button2'>CONTACT US</button>
               </Link>
              </div>
@@ -36,7 +41,7 @@ const Home = () => {
            <div id='sub'>
               <h1>Our Services and Strategy</h1>
               <p>In temperature-controlled transportation, precision is key. Ensuring that materials are kept at the right temperature throughout their journey is critical for maintaining quality and compliance. We specialize in managing these intricate logistics, handling everything.</p>
-              <Link to="/strategy" className='navlinks'>
+              <Link to="/strategy" onClick={handleScrollToTop} className='navlinks'>
               <button className="button">Know More</button>
               </Link>
            </div>
@@ -57,7 +62,7 @@ const Home = () => {
             <div id='sub'>
               <h1>Careers</h1>
               <p>Join our dynamic team and be part of a company committed to innovation and excellence in cold chain logistics. We value creativity, collaboration, and a passion for sustainability. Whether you're an experienced professional or just starting your career, we offer opportunities for growth and development in a supportive environment. Explore our current openings and take the next step in your career with us!</p>
-              <Link to="/career" className='navlinks'>
+              <Link to="/career" onClick={handleScrollToTop} className='navlinks'>
               <button className="button">Work With Us</button>
               </Link>
             </div>

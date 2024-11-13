@@ -9,21 +9,6 @@ import { FaSquareFacebook, FaSquareXTwitter } from 'react-icons/fa6';
 import { MdOutlineClose } from 'react-icons/md';
 
 const options = [
-//   {
-//     name: 'Enable backdrop (default)',
-//     scroll: false,
-//     backdrop: true,
-//   },
-//   {
-//     name: 'Disable backdrop',
-//     scroll: false,
-//     backdrop: false,
-//   },
-//   {
-//     name: 'Enable body scrolling',
-//     scroll: true,
-//     backdrop: false,
-//   },
   {
     name: 'Enable both scrolling & backdrop',
     scroll: true,
@@ -43,9 +28,6 @@ function OffCanvasExample({ name, ...props }) {
         <GiHamburgerMenu/>
       </button>
       <Offcanvas show={show} onHide={handleClose} placement='end' className="custom-offcanvas" {...props}>
-        {/* <Offcanvas.Header closeButton className="custom-offcanvas-header"> */}
-          {/* <Offcanvas.Title>Offcanvas</Offcanvas.Title> */}
-        {/* </Offcanvas.Header> */}
         <Offcanvas.Body className="custom-offcanvas-body">
           <button id='custom-close-button' onClick={handleClose}><MdOutlineClose /></button>
           <div id='pages'>
