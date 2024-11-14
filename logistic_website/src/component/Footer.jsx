@@ -9,6 +9,9 @@ const Footer = () => {
     
 
   return (
+
+    <div className='bg1'>
+
     <div id='footer'>
         <div className='sections-container'>
             <div className='section' id='titleMobile'>
@@ -54,10 +57,15 @@ const Footer = () => {
         <hr />
 
         <div id='policy'>
-            <p>Privacy Policy</p>
+            <Link to='/privacyPolicy' onClick={handleScrollToTop} style={{textDecoration:"none", color:"white"}}>
+                <p>Privacy Policy</p>
+            </Link>
             <p>© 2025 by NR Supply Chain Solutions Pvt Ltd</p>
         </div>
     </div>
+
+    </div>
+
   );
 }
 

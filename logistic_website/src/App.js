@@ -13,6 +13,7 @@ import AOS from 'aos'; // Import AOS JavaScript
 
 
 import './style.scss'
+import PrivacyPolicy from './pages/privacyPolicy';
 
 const App = () => {
 
@@ -29,6 +30,7 @@ const App = () => {
           <Route path="/career" element={<Career />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/openRoles" element={<OpenRoles />} />
+          <Route path="/privacyPolicy" element={<PrivacyPolicy />} />
         </Routes>
       </Router>
   );

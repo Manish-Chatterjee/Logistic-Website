@@ -15,6 +15,8 @@ const Home = () => {
     <div>
 
       <Header/>
+      <div className='bg2'>
+
        <div id='home'>
          <div id='coldMeetsInnovation'>
            <p id='h1a'>Cold Meets</p>
@@ -69,6 +71,9 @@ const Home = () => {
            <img src='https://static.wixstatic.com/media/84770f_a37f07130daf43ee9876e1ca2575342f~mv2.webp/v1/fill/w_768,h_806,al_c,q_85,enc_auto/0b340f_8c1b85ad307a4ac98f252224bdb3c9b4~mv2.webp' alt='imgLadder'/>
          </div>
        </div>
+
+      </div>
+
       <Footer/>
     </div>
   );

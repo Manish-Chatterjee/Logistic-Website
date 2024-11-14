@@ -1,3 +1,7 @@
+:root {
+    background-color: #3e3d35;
+}
+
 body{
     margin: 0;
     padding: 0;
@@ -14,6 +18,33 @@ body{
 
 body::-webkit-scrollbar {
     display: none;
+}
+
+.bg1 {
+    width:100vw; 
+    background-color:#3e3d35; 
+    display:flex; 
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+}
+
+.bg2 {
+    width:100vw; 
+    background-color: #f8f8f4; //off-white
+    display:flex; 
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+}
+
+.bg3 {
+    width:100vw; 
+    background-color: #ffffff; //white
+    display:flex; 
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
 }
 
 p {
@@ -93,6 +124,7 @@ button:hover {
 }
 
 #header {
+    max-width: 1550px;
     font-family: Arial, Helvetica, sans-serif;
     background-color: #3e3d35;
     width: 100%;
@@ -120,6 +152,7 @@ button:hover {
 }
 
 #footer {
+    max-width: 1550px;
     font-family: Arial, Helvetica, sans-serif;
     width: 100%;
     height: auto; // Adjust height as needed
@@ -180,7 +213,7 @@ button:hover {
         color: #f8f8f4;
         margin: 0;
         padding: 50px 0 20px 100px;
-        font-size: 70px;
+        font-size: 60px;
         font-weight: 600;
     }
 
@@ -199,6 +232,42 @@ button:hover {
             font-size: 40px;
             font-weight: 600;
         }
+    }
+}
+
+#privacyPolicyMain {
+    max-width: 1550px;
+    background-color: #3e3d35;
+
+    #privacyPolicyHeading {
+        background-color: #3e3d35;
+        color: #f8f8f4;
+        margin: 0;
+        padding: 50px 0 20px 100px;
+        font-size: 70px;
+        font-weight: 600;
+    }
+
+    h3 {
+        color: #f8f8f4;
+        font-size: 40px;
+        font-weight: 600;
+    }
+
+    p, li {
+        color: #f8f8f4;
+    }
+
+    #privacyPolicy {
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #3e3d35;
+        color: #f8f8f4;
+    
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    
+        padding: 20px 100px;
     }
 }
 
@@ -255,7 +324,7 @@ button:hover {
 
 #strategyMain {
     background-color: #f8f8f4;
-    padding: 0 100px;
+    padding: 0 100px 50px 100px;
     max-width: 1550px;
 
     #strategyHeading {
@@ -441,6 +510,10 @@ button:hover {
                 border-bottom: 0.5px solid  #f8f8f4;
                 margin: 10px 0 30px 0;
                 width: 100%;
+
+                color: #ffffff;
+                font-weight: 600;
+                font-size: 20px;
             }
 
             #checkbox {
@@ -505,7 +578,7 @@ button:hover {
 
         #servicesSupply {
             width: auto;
-            margin: 50px 0 0 0;
+            margin: 80px 0 0 0;
         }
 
         .button-container {
@@ -678,6 +751,9 @@ button:hover {
     
 }
 
+
+
+
 @media (max-width: 840px) {
     #home {
         #h1a, #h1b {
@@ -736,6 +812,37 @@ button:hover {
         #aboutUs {
             display: flex;
             flex-wrap: wrap;
+        }
+    }
+
+    #privacyPolicyMain {
+        padding: 0;
+    
+        #privacyPolicyHeading {
+            margin: 0;
+            font-size: 100px;
+        }
+    
+        h3 {
+            color: #f8f8f4;
+            font-size: 60px;
+            font-weight: 600;
+        }
+    
+        p, li {
+            color: #f8f8f4;
+        }
+    
+        #privacyPolicy {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #3e3d35;
+            color: #f8f8f4;
+        
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+        
+            padding: 20px 100px;
         }
     }
 
@@ -877,6 +984,33 @@ button:hover {
                     margin-top: 20px;
                 }
             }
+        }
+    }
+
+    #privacyPolicyMain {
+        padding: 0;
+    
+        #privacyPolicyHeading {
+            font-size: 50px;
+            padding: 50px 20px;
+            margin: 0;
+        }
+    
+        h3 {
+            color: #f8f8f4;
+            font-size: 40px;
+            font-weight: 600;
+            padding-bottom: 20px;
+        }
+    
+        p, li {
+            color: #f8f8f4;
+        }
+    
+        #privacyPolicy {
+            padding: 0 20px;
+            display: flex;
+            flex-wrap: wrap;
         }
     }
 

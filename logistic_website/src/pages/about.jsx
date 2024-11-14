@@ -14,9 +14,12 @@ const About = () => {
   return (
     <div>
       <Header />
-      <div id='aboutUsMain'>
+
+      <div className='bg1'>
+
+        <div id='aboutUsMain' data-aos="fade-up" data-aos-duration="500" data-aos-offset="200">
             <h1 id='aboutUsHeading'>About Us</h1>
-        <div id='aboutUs' data-aos="fade-up" data-aos-duration="500" data-aos-offset="200">
+        <div id='aboutUs'>
           <div>
             <p>At the heart of our cold chain logistics is cutting-edge temperature control technology that not only ensures optimal conditions for your products but also provides real-time monitoring and data analytics. Unlike our competitors, we utilize advanced IoT sensors and AI-driven insights to track and manage temperature fluctuations proactively.</p>
             <ol>
@@ -41,6 +44,11 @@ const About = () => {
           </div>
 
         </div>
+
+      
+      </div>
+
+      <div className='bg3'>
 
         <div id='leaderShip' data-aos="fade-up" data-aos-duration="500" data-aos-offset="200">
           <div id='leaderShipHeader' style={{display:"flex", justifyContent:"space-between", alignItems:"center"}}>
@@ -77,6 +85,9 @@ const About = () => {
           </div>
         </div>
       </div>
+
+      </div>
+
       <Footer/>
     </div>
   );

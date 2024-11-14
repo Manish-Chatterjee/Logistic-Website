@@ -25,6 +25,8 @@ const Header = () => {
   };
 
   return (
+    <div className='bg1'>
+
     <div id='header'>
         <div id='company'>
           <Link to='/' onClick={handleScrollToTop} style={{textDecoration:"none"}}>
@@ -43,6 +45,8 @@ const Header = () => {
             <Link className='navlinks' to="/contact" onClick={handleScrollToTop}>Contact</Link>
           
         </div>}
+    </div>
+
     </div>
   )
 }

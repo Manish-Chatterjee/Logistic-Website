@@ -14,6 +14,9 @@ const Career = () => {
   return (
     <div>
       <Header />
+
+    <div className='bg2'>
+
       <div>
         <div id='careerContainer' data-aos="fade-up" data-aos-duration="500" data-aos-offset="200">
           <div className='career'>
@@ -74,6 +77,9 @@ const Career = () => {
           </div>
         </div>
       </div>
+
+    </div>
+
       <Footer/>
     </div>
   );

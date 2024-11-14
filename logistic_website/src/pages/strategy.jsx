@@ -8,6 +8,8 @@ const Strategy = () => {
     <div>
       <Header />
       <div data-aos="fade-up" data-aos-duration="500" data-aos-offset="200">
+        <div className='bg2'>
+
         <div id="strategyMain">
           <h1 id='strategyHeading'>Services and<br />Strategy</h1>
           <div style={{display:"flex"}}>
@@ -19,6 +21,10 @@ const Strategy = () => {
           </div>
           
         </div>
+
+        </div>
+
+        <div className='bg3'>
 
           <div id='servicesContainer'>
             <div className='services'>
@@ -51,6 +57,9 @@ const Strategy = () => {
               <p>Maximize your business potential through our strategic partnerships. Collaborating with industry leaders, we offer innovative solutions and valuable expertise to drive growth and improve efficiency. Together, we create lasting value and help you stay ahead in a competitive landscape. Let’s succeed together!</p>
             </div>
           </div>
+
+        </div>
+
 
       </div>
 
