@@ -17,7 +17,9 @@ const Strategy = () => {
               <p>In temperature-controlled transportation, precision is key. Ensuring that materials are kept at the right temperature throughout their journey is critical for maintaining quality and compliance. We specialize in managing these intricate logistics, handling everything from inventory tracking to regulatory adherence. With our expertise, you can trust that your temperature-sensitive products are in good hands, allowing you to concentrate on your core business while we ensure smooth, reliable transport.</p>
               <p>Tailored Business Solutions in Consulting, Technology, Transportation, Storage and Training</p>
             </div>
-            <img src='' alt='vid'/>
+            <video autoPlay muted loop id="strategyVideo">
+              <source src="https://video.wixstatic.com/video/11062b_5352e4de459c4210a4f817af57e21508/720p/mp4/file.mp4" type='video/mp4'/>
+            </video>
           </div>
           
         </div>

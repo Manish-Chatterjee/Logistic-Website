@@ -18,7 +18,13 @@ const Home = () => {
       <div className='bg2'>
 
        <div id='home'>
+
          <div id='coldMeetsInnovation'>
+
+        <video autoPlay loop muted id='bg-vid'>
+          <source src='https://video.wixstatic.com/video/c837a6_a80ebb32eff54e3d8588e55383e1ce1e/1080p/mp4/file.mp4' type='video/mp4'/>
+        </video>
+
            <p id='h1a'>Cold Meets</p>
            <p id='h1b'>Innovation</p>
            <div id='coldMeetsInnovationContainer'>
@@ -37,6 +43,8 @@ const Home = () => {
              <p id='servicesSupply'>LOCAL, REGIONAL, AND NATIONWIDE TRANSPORTATION SERVICES</p>
            </div>
          </div>
+
+         
   
          <div id='ourServicesAndStrategy' data-aos="fade-up" data-aos-duration="500" data-aos-offset="200">
            <img src=' https://static.wixstatic.com/media/11062b_8ce3b16ee2c2452a83dc9793a0e80056~mv2.jpg/v1/fill/w_1140,h_1140,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Warehouse%20Shelves%20from%20Above.jpg' alt='img'/>
