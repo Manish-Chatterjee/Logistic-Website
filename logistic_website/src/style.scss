@@ -342,13 +342,12 @@ button:hover {
     #strategy {
         font-family: Arial, Helvetica, sans-serif;
         background-color: #f8f8f4;
-        width: 40%;
-        margin-right: 100px;
+        width: 45%;
+        margin: auto;
     }
 
     #strategyVideo {
         width: 50%;
-        // border: 2px solid brown;
     }
 }
 
@@ -780,9 +779,6 @@ button:hover {
     left: 0;
 
     object-fit: cover;
-    // overflow: hidden;
-
-    // border: 5px dotted plum;
 
     z-index: -1;
 
@@ -851,6 +847,19 @@ button:hover {
         }
     }
 
+    #strategyMain {
+
+        #strategy {
+            width: 100%;
+            margin: 0;
+        }
+
+        #strategyVideo {
+            width: 100%;
+        }
+
+    }
+
     #privacyPolicyMain {
         padding: 0;
     
@@ -910,6 +919,7 @@ button:hover {
         width: 100vw;
     }
 }
+
 
 @media (max-width: 480px) {
 
@@ -1068,6 +1078,10 @@ button:hover {
     #strategyMain {
         padding: 20px;
 
+        #strategyHeading {
+            padding-bottom: 20px;
+        }
+
         h1 {
             padding: 0;
         }
@@ -1079,7 +1093,6 @@ button:hover {
 
         #strategyVideo {
             width: 100%;
-            border: 2px solid brown;
         }
 
     }
