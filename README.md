@@ -74,11 +74,11 @@ Installation</h2>
 
 1. Clone the repository:
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/Manish-Chatterjee/Logistic-Website.git
    ```
 2. Navigate to the project directory:
    ```bash
-   cd <project-directory>
+   cd logistic-website
    ```
 3. Install the dependencies:
    ```bash
@@ -96,17 +96,5 @@ Instructions on how to run the project:
 ```bash
 npm start
 ```
-or
-```bash
-npm run <specific-command>
-```
 </div>
 
-<!-- <br/> -->
-
-<h2 style="border: 0.1px solid white; font-family: Sail; box-shadow: 0 0 10px white; border-radius: 5px; width: fit-content; padding: 5px 7px; margin-block: 30px">
-Contributing</h2>
-
-<p style="margin-inline: 30px">
-Guidelines for contributing to the project.
-</p>
