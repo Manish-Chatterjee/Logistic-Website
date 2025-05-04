@@ -6,6 +6,8 @@ const Footer = () => {
     const handleScrollToTop = () => {
         window.scrollTo(0, 0);
       };
+
+      const year = new Date().getFullYear();
     
 
   return (
@@ -35,32 +37,13 @@ const Footer = () => {
                 <Link className='navlinks' to="">X</Link>
             </div>
 
-            <div className='section'>
-                <p className='navlinks'>Registered Office</p>
-                <p className='subNavlinks'>Electronic City PO, Bangalore - 100</p>
-                <p className='subNavlinks'>
-                    7022007829<br />
-                    <a href="mailto:enquiries@shipswift.in" className="email-link">enquiries@shipswift.in</a>
-                </p>
-            </div>
-
-            <div className='section'>
-                <p className='navlinks'>Communication Address</p>
-                <p className='subNavlinks'>Share Office Solutions
-                    Murphy Road, Indranagar, 
-                    Bangalore
-                </p>
-                <p className='subNavlinks'>7022007828</p>
-            </div>
         </div>
 
         <hr />
 
         <div id='policy'>
-            <Link to='/privacyPolicy' onClick={handleScrollToTop} style={{textDecoration:"none", color:"white"}}>
-                <p>Privacy Policy</p>
-            </Link>
-            <p>© 2025 by NR Supply Chain Solutions Pvt Ltd</p>
+            <p>Privacy Policy</p>
+            <p>&copy; {year} by FrostBite Solutions Pvt Ltd</p>
         </div>
     </div>
 

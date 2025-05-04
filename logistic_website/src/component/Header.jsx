@@ -30,8 +30,8 @@ const Header = () => {
     <div id='header'>
         <div id='company'>
           <Link to='/' onClick={handleScrollToTop} style={{textDecoration:"none"}}>
-            <p className='companyName'>CAFECOLD</p>
-            <p className='companyTitle'>From frost to freight. Always Cool.</p>
+            <p className='companyName'>Frosty Freight</p>
+            <p className='companyTitle'>Keeping it Cool. Keeping Fresh</p>
           </Link>
         </div>
 

@@ -14,8 +14,8 @@ const Strategy = () => {
           <h1 id='strategyHeading'>Services and<br />Strategy</h1>
           <div style={{display:"flex", flexWrap:"wrap"}}>
             <div id='strategy'>
-              <p>In temperature-controlled transportation, precision is key. Ensuring that materials are kept at the right temperature throughout their journey is critical for maintaining quality and compliance. We specialize in managing these intricate logistics, handling everything from inventory tracking to regulatory adherence. With our expertise, you can trust that your temperature-sensitive products are in good hands, allowing you to concentrate on your core business while we ensure smooth, reliable transport.</p>
-              <p>Tailored Business Solutions in Consulting, Technology, Transportation, Storage and Training</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta iste praesentium ex accusamus tenetur, quaerat unde id eum et inventore distinctio dignissimos quasi sequi tempore nihil aperiam, fuga quam nam. Praesentium labore veniam unde et exercitationem cum, adipisci odit saepe sed optio distinctio eaque voluptatum sit voluptas animi beatae repellendus tempora expedita dicta. Voluptate iste officia quae, commodi autem incidunt</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel animi laudantium consectetur</p>
             </div>
             <video autoPlay muted loop id="strategyVideo">
               <source src="https://video.wixstatic.com/video/11062b_5352e4de459c4210a4f817af57e21508/720p/mp4/file.mp4" type='video/mp4'/>
@@ -31,32 +31,32 @@ const Strategy = () => {
           <div id='servicesContainer'>
             <div className='services'>
               <h2>Express Delivery</h2>
-              <p>Experience unmatched speed with our express delivery service! We pride ourselves on providing rapid, reliable, and efficient shipping solutions tailored to meet your urgent needs. We arrive on time, every time. Our streamlined process and technology guarantee swift handling and real-time tracking, so you’re always in the loop. </p>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt, sequi! Provident ab, qui repudiandae minus, perferendis odit labore quis enim quos natus nobis soluta laudantium rem quae totam. Consectetur voluptatibus corporis eligendi delectus quasi sint quia mollitia magni molestiae? Consectetur, delectus! Officia ipsa ipsum laudantium ad qui repellendus aperiam nulla.</p>
             </div>
 
             <div className='services'>
               <h2>Corporate Fuel Credits</h2>
-              <p>Our Fuel Advance Program offers quick access to funds for covering fuel expenses, helping you manage costs without disrupting your cash flow. With streamlined applications and fast approvals, you can focus on your operations while we handle the financial details. Keep your business moving smoothly with our flexible solutions!</p>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur, quam repellat dolorem iste officia quae accusantium eos amet commodi accusamus nesciunt voluptatem, hic magnam reiciendis dolorum eaque at sequi itaque alias ut deleniti quaerat voluptatibus? Sunt, natus, inventore quidem maxime dignissimos quia accusantium deleniti, magnam et consequuntur doloribus temporibus esse.</p>
             </div>
 
             <div className='services'>
               <h2>Vehicle Management</h2>
-              <p>Stay on top of your fleet's needs with our all-in-one vehicle management solution. Effortlessly track and manage essential paperwork, insurance details, and vehicle data with our intuitive system. Monitor vehicle health, including wear and tear, with real-time updates to ensure timely maintenance and avoid costly repairs. </p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus minus animi rem? Sapiente animi impedit accusamus consequatur. Praesentium esse minus unde voluptatem optio necessitatibus autem. Voluptate suscipit voluptatibus quasi repellat nostrum eaque beatae quae tenetur eos odit ipsa sint, officia corporis fugit aut ipsam consectetur inventore, dolorem autem velit tempore. </p>
             </div>
 
             <div className='services'>
               <h2>Cargo Insurance</h2>
-              <p>Protect your shipments with our comprehensive cargo insurance, offering competitive rates and tailored policies against loss, damage, and theft. Our quick and hassle-free application process ensures you get the coverage you need without breaking the bank. Contact us today!</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui saepe dolorum illo eum quod, vel itaque deleniti dicta, inventore dignissimos quam facilis ipsa eos tempore voluptatum assumenda, nemo officiis? Eos provident, numquam ea nam id eaque possimus repellat sit aliquid ut ex nesciunt dolorum modi quo amet consectetur ipsum harum.</p>
             </div>
 
             <div className='services'>
               <h2>Distress Repair (SOS)</h2>
-              <p>Keep your operations running smoothly with our 24/7 roadside assistance. We provide on-site repairs, alternative vehicle arrangements, and loading/unloading support. With over 1,000 experts in our network, you can count on us for quick, reliable help whenever you need it. Stay secure and mobile!</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, consequatur. Voluptas illo porro repudiandae tenetur et! Exercitationem quam, ipsum voluptas hic unde totam laborum, eum perferendis perspiciatis culpa id aliquid quo laudantium accusantium tempore illo alias aliquam. Itaque, accusantium quos! Voluptatum inventore exercitationem iste quia atque eaque magni nisi nam.</p>
             </div>
 
             <div className='services'>
               <h2>Strategic Partnerships</h2>
-              <p>Maximize your business potential through our strategic partnerships. Collaborating with industry leaders, we offer innovative solutions and valuable expertise to drive growth and improve efficiency. Together, we create lasting value and help you stay ahead in a competitive landscape. Let’s succeed together!</p>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate necessitatibus, at vel non nihil quae fugiat tenetur saepe soluta expedita consectetur omnis enim temporibus inventore reiciendis. Adipisci itaque reprehenderit a tenetur expedita facilis nemo? Aliquam maiores odio consectetur modi sit veniam quia itaque quam enim. Facilis commodi doloribus quo et.</p>
             </div>
           </div>
 
