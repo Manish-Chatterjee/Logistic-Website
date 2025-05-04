@@ -54,7 +54,7 @@ const Contact = () => {
             <div className='formContainer'>
               <div className='section1'>
                 <p>We’d love to hear from you! For inquiries, support, or to learn more about our services, reach out to us:</p>
-                <p>sales@cafecold.com<br />enquiries@cafecold.com</p>
+                <p>sales@frostyNetwork<br />ask@enquiry</p>
               </div>
 
               <div className='section2'>

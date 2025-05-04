@@ -2,7 +2,7 @@
 import React from 'react';
 import Header from '../component/Header';
 import Footer from '../component/Footer';
-import { Button } from 'react-bootstrap';
+// import { Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
 const Home = () => {
@@ -50,7 +50,7 @@ const Home = () => {
            <img src=' https://static.wixstatic.com/media/11062b_8ce3b16ee2c2452a83dc9793a0e80056~mv2.jpg/v1/fill/w_1140,h_1140,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Warehouse%20Shelves%20from%20Above.jpg' alt='img'/>
            <div id='sub'>
               <h1>Our Services and Strategy</h1>
-              <p>In temperature-controlled transportation, precision is key. Ensuring that materials are kept at the right temperature throughout their journey is critical for maintaining quality and compliance. We specialize in managing these intricate logistics, handling everything.</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque corrupti at debitis molestias tenetur assumenda repellat nobis velit! Architecto enim ut odit numquam consequatur sequi placeat ullam facilis quaerat tempora.</p>
               <Link to="/strategy" onClick={handleScrollToTop} className='navlinks'>
               <button className="button">Know More</button>
               </Link>
@@ -60,18 +60,18 @@ const Home = () => {
          <div id='committedToResponsibleLogistics' data-aos="fade-up" data-aos-duration="500" data-aos-offset="200">
           <div>
             <h1>Committed to Responsible Logistics</h1>
-            <p>We are dedicated to sustainable practices throughout our cold chain logistics. By optimizing energy use, minimizing waste, and employing eco-friendly packaging, we ensure that your temperature-sensitive products are handled with care for both quality and the environment. Together, we can maintain product integrity while protecting our planet. Let’s make a difference!</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque sunt rem cupiditate harum culpa vero illo similique nihil sit neque debitis esse odit dicta repudiandae quibusdam, aspernatur ea possimus perferendis at laboriosam fugit, doloremque recusandae. Fugiat quidem ducimus voluptatibus quae qui dolore perferendis corrupti deserunt, ab, repellendus beatae et distinctio. Placeat quisquam blanditiis, omnis molestiae quasi eaque. Assumenda, repellat placeat.</p>
           </div>
           <div>
             <h1>Real-Time Information</h1>
-            <p>Perishables don’t last long. Be it medicines, fruits, vegetables, protein, dairy, or seafood, without the right ambient conditions maintaining freshness or flavor is an impossible feat. Fortunately, cold chain technologies have come a long way and offer far more options than just cold or hot settings. There are state-of-the-art technologies in the market that help monitor conditions inside a container and provide a real-time view of location, temperature, humidity, oxygen, and carbon dioxide levels. That's not all. Should market situations change, shippers can use the available knowledge to redirect cargo to more favorable destinations.</p>            
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio voluptatem deserunt, animi recusandae doloribus ipsa illo maiores nemo reprehenderit autem cum earum tempora laboriosam? Ducimus rerum molestias eligendi excepturi, optio dolore, sequi culpa sint deserunt praesentium magni placeat beatae quod dolores amet ea reiciendis iste modi nemo voluptate atque earum, temporibus quidem! Provident dolorem veniam praesentium, qui quasi officiis. Sint modi, aliquam nesciunt praesentium natus quae corporis cupiditate numquam! Exercitationem repudiandae est beatae, laudantium ab saepe pariatur vel incidunt obcaecati.</p>            
           </div>
          </div>
   
          <div id='careers' data-aos="fade-up" data-aos-duration="500" data-aos-offset="200">
             <div id='sub'>
               <h1>Careers</h1>
-              <p>Join our dynamic team and be part of a company committed to innovation and excellence in cold chain logistics. We value creativity, collaboration, and a passion for sustainability. Whether you're an experienced professional or just starting your career, we offer opportunities for growth and development in a supportive environment. Explore our current openings and take the next step in your career with us!</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore eligendi maxime illo ad tempora minima? Similique ratione laborum quis sed id omnis nesciunt inventore eligendi esse ducimus nihil consequatur laudantium aliquid voluptas, itaque deleniti reiciendis adipisci blanditiis eaque deserunt atque optio distinctio porro cumque! Commodi maiores harum veniam unde ipsum repellat nulla ullam, amet ipsam distinctio incidunt sint culpa? Ex itaque quisquam voluptatibus sit magni incidunt dolorem modi earum praesentium.</p>
               <Link to="/career" onClick={handleScrollToTop} className='navlinks'>
               <button className="button">Work With Us</button>
               </Link>

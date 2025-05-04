@@ -2,14 +2,8 @@
 import React from 'react';
 import Header from '../component/Header';
 import Footer from '../component/Footer';
-import { Button } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
 
 const Career = () => {
-
-  const handleScrollToTop = () => {
-    window.scrollTo(0, 0);
-  };
 
   return (
     <div>
@@ -20,60 +14,52 @@ const Career = () => {
       <div>
         <div id='careerContainer' data-aos="fade-up" data-aos-duration="500" data-aos-offset="200">
           <div className='career'>
-            <h2>Working at CafeCold</h2>
-            <p>Join the CafeCold team and immerse yourself in a vibrant workplace dedicated to excellence in cold chain logistics. We foster a culture of collaboration, innovation, and sustainability, ensuring that every team member contributes to our mission. With opportunities for growth, professional development, and a supportive environment, you'll be empowered to make an impact. Experience the unique blend of passion and purpose—come grow with us at CafeCold!</p>
+            <h2>Working at Frosty Freight</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem mollitia, nemo accusantium vitae soluta, esse harum cupiditate debitis alias aliquid a unde incidunt inventore voluptas, dolorem iure. Beatae error exercitationem tenetur debitis cum nihil libero, cupiditate placeat neque quaerat dolor accusamus esse. Mollitia itaque sit optio quidem, sapiente vero! Deleniti minima, dolor corporis corrupti sapiente eaque repellat, quia, consectetur incidunt reprehenderit qui deserunt aliquid quam unde? Exercitationem natus in facere.</p>
           </div>
           <div className='career'>
             <h2>Company Culture</h2>
-            <p>At CafeCold, our company culture is built on collaboration, innovation, and sustainability. We foster an inclusive environment where every voice is heard and valued. Teamwork drives our success, and we encourage creative thinking to solve challenges in cold chain logistics. Our commitment to professional development ensures that employees have the tools and support to grow in their careers. Together, we celebrate achievements and strive for excellence while making a positive impact on our industry and the environment. Join us in creating a culture where passion meets purpose!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, perferendis? Consequuntur, dolor vitae. Commodi quibusdam quis minima vel temporibus. Reprehenderit ad pariatur voluptatum minima ducimus quas. Reprehenderit, cupiditate. Praesentium nesciunt, distinctio velit dolorem, suscipit soluta placeat delectus harum, dolores blanditiis sapiente fuga. Quae, quo officiis adipisci eos consequuntur nihil. Ut ratione dolorem esse ipsam, corporis id voluptas, voluptatibus cumque delectus illum expedita impedit corrupti mollitia animi blanditiis? Voluptate, minus vitae.</p>
           </div>
           <div className='career'>
             <h2>Opportunities for Professionals</h2>
-            <p>At CafeCold, we offer diverse opportunities for professionals to grow in a collaborative environment, with access to career development and the chance to make a meaningful impact in the cold chain logistics industry.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis atque eveniet explicabo rem provident veritatis rerum, at quas neque beatae similique? Temporibus quis in praesentium velit fugit odit eum sint adipisci, pariatur, obcaecati neque ex officia? Quas esse, exercitationem optio officia sint adipisci quia accusantium alias quasi error recusandae asperiores.</p>
           </div>
           <div className='career'>
             <h2>Opportunities for Students</h2>
-            <p>At CafeCold, we provide students with valuable internships and entry-level positions that offer hands-on experience in cold chain logistics. Join us to develop your skills, gain industry insights, and collaborate with professionals while making a meaningful impact on sustainability and innovation. Explore your potential with CafeCold and kickstart your career!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere at iusto fugit veritatis tempore. Rem nesciunt impedit voluptatibus debitis numquam pariatur porro aliquid assumenda hic, quae odit, saepe dicta. Consequatur cumque perferendis sequi quia neque harum commodi corporis in id! Nesciunt, dicta, laudantium reprehenderit quas consequatur omnis voluptatem totam eius nostrum aperiam deleniti provident sint debitis aliquam possimus veniam blanditiis magni dolores dolorum odit. Odit omnis blanditiis adipisci veniam neque.</p>
           </div>
         </div>
         <div id='openRolesContainer' data-aos="fade-up" data-aos-duration="500" data-aos-offset="200">
           <div className='openRoles'>
             <p>01</p>
             <p>Logistics Coordinator</p>
-            <Link to="/openRoles?accordion=0" onClick={handleScrollToTop} className='navlinks'>
               <button>Apply now</button>
-            </Link>
           </div>
           <div className='openRoles'>
             <p>02</p>
             <p>Supply Chain Manager</p>
-            <Link to="/openRoles?accordion=1" onClick={handleScrollToTop} className='navlinks'>
               <button>Apply now</button>
-            </Link>          </div>
+          </div>
           <div className='openRoles'>
             <p>03</p>
             <p>Warehouse Supervisor</p>
-            <Link to="/openRoles?accordion=2" onClick={handleScrollToTop} className='navlinks'>
               <button>Apply now</button>
-            </Link>          </div>
+          </div>
           <div className='openRoles'>
             <p>04</p>
             <p>Freight Forwarder</p>
-            <Link to="/openRoles?accordion=3" onClick={handleScrollToTop} className='navlinks'>
               <button>Apply now</button>
-            </Link>          </div>
+            </div>
           <div className='openRoles'>
             <p>05</p>
             <p>Customer Service Expert</p>
-            <Link to="/openRoles?accordion=4" onClick={handleScrollToTop} className='navlinks'>
               <button>Apply now</button>
-            </Link>          </div>
+            </div>
           <div className='openRoles'>
             <p>06</p>
             <p>Inventory Control Specialist</p>
-            <Link to="/openRoles?accordion=5" onClick={handleScrollToTop} className='navlinks'>
               <button>Apply now</button>
-            </Link>          
           </div>
         </div>
       </div>
