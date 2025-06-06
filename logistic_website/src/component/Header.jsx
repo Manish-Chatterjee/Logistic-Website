@@ -31,7 +31,7 @@ const Header = () => {
         <div id='company'>
           <Link to='/' onClick={handleScrollToTop} style={{textDecoration:"none"}}>
             <p className='companyName'>Frosty Freight</p>
-            <p className='companyTitle'>Keeping it Cool. Keeping Fresh</p>
+            <p className='companyTitle'>Keeping it Cool & Fresh</p>
           </Link>
         </div>
 

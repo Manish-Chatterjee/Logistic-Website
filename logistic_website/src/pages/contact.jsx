@@ -21,6 +21,12 @@ const Contact = () => {
     e.preventDefault();
     // Handle form submission logic here (e.g., send data to an API)
     console.log('Form submitted:', formData);
+    setFormData({
+      firstName: '',
+      lastName: '',
+      email: '',
+      message: '',
+    })
   };
 
   // Newsletter
@@ -40,6 +46,8 @@ const Contact = () => {
     // Handle form submission logic here (e.g., send data to an API)
     console.log('Email:', email);
     console.log('Subscribe to newsletter:', subscribe);
+    setEmail('');
+    setSubscribe(null);
   };
 
   return (

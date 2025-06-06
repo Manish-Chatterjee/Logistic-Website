@@ -390,7 +390,7 @@ button:hover {
 
     .career {
         flex: 50%;
-        padding: 50px 50px 50px 0;
+        padding: 50px;
 
         h2 {
             color: #3e3d35;
@@ -603,7 +603,10 @@ button:hover {
                 border: 0.5px solid #f8f8f4;
 
                 &:hover {
-                    background-color: #3e3d35;
+                    color: #3e3d35;
+                    background-color: #f8f8f4;
+                    font-weight: bold;
+                    transform: scale(1.05);
                 }
             }
 
@@ -615,7 +618,10 @@ button:hover {
                 border: 0.5px solid #f8f8f4;
 
                 &:hover {
-                    background-color: #3e3d35;
+                    color: #3e3d35;
+                    background-color: #f8f8f4;
+                    font-weight: bold;
+                    transform: scale(1.05);
                 }
             }
         }
