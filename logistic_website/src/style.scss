@@ -81,7 +81,20 @@ button:hover {
     font-weight: 600;
     font-size: 18px;
     text-decoration: none;
-    padding: 5px 0;
+    padding: 5px;
+
+
+}
+
+.header:hover {
+    font-weight: 200;
+    border: 0.1px solid white;
+    padding-inline: 5px;
+    border-radius: 5px;
+}
+
+.active {
+    border-bottom: 2px solid white;
 }
 
 .companyName {

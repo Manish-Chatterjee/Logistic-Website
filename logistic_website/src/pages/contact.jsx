@@ -55,8 +55,6 @@ const Contact = () => {
         <Header />
     <div id='formMain'>
 
-        
-
           <div data-aos="fade-up" data-aos-duration="500" data-aos-offset="200">
             <h1 id='contactHeading'>Contact</h1>
             <div className='formContainer'>
@@ -97,6 +95,8 @@ const Contact = () => {
                       <input 
                         type="email" 
                         name="email" 
+                        pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" // email pattern
+                        title="Wrong email format" // message
                         value={formData.email} 
                         onChange={handleChange} 
                         required 
@@ -156,8 +156,6 @@ const Contact = () => {
             </div>
       
           </div>
-
-        
 
     </div>
         <Footer/>

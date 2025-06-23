@@ -1,9 +1,8 @@
-import React, { useEffect, useState } from 'react'
-import { Link } from 'react-router-dom'
-import NavSidebar from './NavSidebar';
+import React, { useEffect, useState } from "react";
+import { Link, NavLink } from "react-router-dom";
+import NavSidebar from "./NavSidebar";
 
 const Header = () => {
-
   const [isMobileOrTablet, setIsMobileOrTablet] = useState(false);
 
   const handleResize = () => {
@@ -13,10 +12,10 @@ const Header = () => {
 
   useEffect(() => {
     handleResize(); // Check size on mount
-    window.addEventListener('resize', handleResize); // Add event listener
+    window.addEventListener("resize", handleResize); // Add event listener
 
     return () => {
-      window.removeEventListener('resize', handleResize); // Clean up on unmount
+      window.removeEventListener("resize", handleResize); // Clean up on unmount
     };
   }, []);
 
@@ -25,30 +24,65 @@ const Header = () => {
   };
 
   return (
-    <div className='bg1'>
-
-    <div id='header'>
-        <div id='company'>
-          <Link to='/' onClick={handleScrollToTop} style={{textDecoration:"none"}}>
-            <p className='companyName'>Frosty Freight</p>
-            <p className='companyTitle'>Keeping it Cool & Fresh</p>
+    <div className="bg1">
+      <div id="header">
+        <div id="company">
+          <Link
+            to="/"
+            onClick={handleScrollToTop}
+            style={{ textDecoration: "none" }}
+          >
+            <p className="companyName">Frosty Freight</p>
+            <p className="companyTitle">Keeping it Cool & Fresh</p>
           </Link>
         </div>
 
-        {isMobileOrTablet ? <NavSidebar/> :
-        <div id='nav'>
-        
-            <Link className='navlinks' to="/" onClick={handleScrollToTop}>Home</Link>
-            <Link className='navlinks' to="/about" onClick={handleScrollToTop}>About</Link>
-            <Link className='navlinks' to="/strategy" onClick={handleScrollToTop}>Strategy</Link>
-            <Link className='navlinks' to="/career" onClick={handleScrollToTop}>Career</Link>
-            <Link className='navlinks' to="/contact" onClick={handleScrollToTop}>Contact</Link>
-          
-        </div>}
+        {isMobileOrTablet ? (
+          <NavSidebar />
+        ) : (
+          <div id="nav">
+            <NavLink
+              className={({ isActive }) =>
+                isActive ? "navlinks header active" : "navlinks header"
+              }
+              to="/"
+              onClick={handleScrollToTop}
+            >
+              Home
+            </NavLink>
+            <NavLink
+              className="navlinks header"
+              to="/about"
+              onClick={handleScrollToTop}
+            >
+              About
+            </NavLink>
+            <NavLink
+              className="navlinks header"
+              to="/strategy"
+              onClick={handleScrollToTop}
+            >
+              Strategy
+            </NavLink>
+            <NavLink
+              className="navlinks header"
+              to="/career"
+              onClick={handleScrollToTop}
+            >
+              Career
+            </NavLink>
+            <NavLink
+              className="navlinks header"
+              to="/contact"
+              onClick={handleScrollToTop}
+            >
+              Contact
+            </NavLink>
+          </div>
+        )}
+      </div>
     </div>
+  );
+};
 
-    </div>
-  )
-}
-
-export default Header
+export default Header;

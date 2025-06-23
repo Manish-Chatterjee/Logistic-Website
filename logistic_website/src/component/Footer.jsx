@@ -24,11 +24,11 @@ const Footer = () => {
             </div>
 
             <div className='section'>
-                <Link className='navlinks' to="/" onClick={handleScrollToTop}>Home</Link>
-                <Link className='navlinks' to="/about" onClick={handleScrollToTop}>About</Link>
-                <Link className='navlinks' to="/strategy" onClick={handleScrollToTop}>Strategy</Link>
-                <Link className='navlinks' to="/career" onClick={handleScrollToTop}>Career</Link>
-                <Link className='navlinks' to="/contact" onClick={handleScrollToTop}>Contact</Link>
+                <Link className='navlinks header' to="/" onClick={handleScrollToTop}>Home</Link>
+                <Link className='navlinks header' to="/about" onClick={handleScrollToTop}>About</Link>
+                <Link className='navlinks header' to="/strategy" onClick={handleScrollToTop}>Strategy</Link>
+                <Link className='navlinks header' to="/career" onClick={handleScrollToTop}>Career</Link>
+                <Link className='navlinks header' to="/contact" onClick={handleScrollToTop}>Contact</Link>
             </div>
 
             <div className='section'>
