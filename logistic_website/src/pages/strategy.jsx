@@ -17,7 +17,8 @@ const Strategy = () => {
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta iste praesentium ex accusamus tenetur, quaerat unde id eum et inventore distinctio dignissimos quasi sequi tempore nihil aperiam, fuga quam nam. Praesentium labore veniam unde et exercitationem cum, adipisci odit saepe sed optio distinctio eaque voluptatum sit voluptas animi beatae repellendus tempora expedita dicta. Voluptate iste officia quae, commodi autem incidunt</p>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel animi laudantium consectetur</p>
             </div>
-            <video autoPlay muted loop id="strategyVideo">
+            
+            <video autoPlay muted loop playsInline id="strategyVideo">
               <source src="https://video.wixstatic.com/video/11062b_5352e4de459c4210a4f817af57e21508/720p/mp4/file.mp4" type='video/mp4'/>
             </video>
           </div>

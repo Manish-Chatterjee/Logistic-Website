@@ -21,7 +21,7 @@ const Home = () => {
 
          <div id='coldMeetsInnovation'>
 
-        <video autoPlay loop muted id='bg-vid'>
+        <video autoPlay loop muted playsInline id='bg-vid'>
           <source src='https://video.wixstatic.com/video/c837a6_a80ebb32eff54e3d8588e55383e1ce1e/1080p/mp4/file.mp4' type='video/mp4'/>
         </video>
 
